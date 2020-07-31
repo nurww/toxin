@@ -1,0 +1,65 @@
+.aside {
+  width: 266px;
+}
+
+.aside .inputContainer__wide {
+  width: 266px;
+}
+
+.aside .room-convenience__icon {
+  position: unset;
+}
+
+
+
+
+.main {
+  width: 835px;
+}
+
+.roomCard-wrapper {
+  flex-wrap: wrap;
+}
+
+
+
+
+.room-navigation {
+  flex-direction: column;
+  margin: 41px 0 0 0;
+}
+
+.bread-crumbs {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bread-crumbs_crumb {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+.bread-crumbs__first,
+.bread-crumbs__next {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.bread-crumbs__next {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.room-navigation__result {
+  margin: 10.5px 0 0 0;
+}
+
+
+.room-convenience .checkbox:nth-child(2) {
+  margin: 0;  
+}

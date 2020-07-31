@@ -1,0 +1,59 @@
+.formCard.roomReserve {
+  height: 511px;
+}
+
+.room-card-info,
+.room-card-info .flex {
+  align-items: baseline;
+}
+
+.column-first {
+  width: 215px;
+  position: relative;
+}
+
+.rub {
+  position: relative;
+}
+
+.rub::after {
+  background: rgba(31, 32, 65, 0.75);
+  bottom: 5px;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 6px;
+}
+
+.room-card-info .rub.sand::after {
+  background: rgba(31,32,65,.5);
+}
+
+.rub.sand::after {
+  background: #1F2041;
+  bottom: 7.5px;
+  bottom: 30%;
+  height: 2px;
+  width: 6px;
+}
+
+.info-symbol {
+  align-items: center;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  position: absolute;
+  width: 20px;
+  top: 0;
+  right: -25px;
+}
+
+.line-trough {
+  border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  display: block;
+  width: 182px;
+}

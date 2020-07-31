@@ -1,0 +1,77 @@
+.footerWidgets {
+  align-items: center;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  height: 372px;
+}
+
+.footerWidgets-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerWidgets-content li {
+  font-size: 14px;
+  line-height: 17px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footerWidgets-content__aside li {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:first-child {
+  color: #1F2041;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+ul:first-child li {
+  width: 260px;
+}
+
+ul:last-child li {
+  width: 208px;
+}
+
+.footerCopyright {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+}
+
+// dark 75%
+.footerCopyright span {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+}
+
+.footerWidgets .input {
+  width: 260px;
+}
+
+.footer-content-social {
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+}
+
+.footer-content-social span,
+.footerWidgets .icon {
+  background: linear-gradient(#BC9CFF, #8BA4F9) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}

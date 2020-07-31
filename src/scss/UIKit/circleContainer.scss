@@ -1,0 +1,71 @@
+.circle-container {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  height: 120px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-part-container,
+.right-top-part-container,
+.right-down-part-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  width: 59px;
+}
+
+.left-part-container {
+  height: 120px;
+  left: 0;
+}
+
+.right-top-part-container,
+.right-down-part-container {
+  height: 59px;
+  right: 0;
+}
+
+.right-top-part-container {
+  top: 0;
+}
+
+.right-down-part-container {
+  bottom: 0;
+}
+
+.left-part-container__circle,
+.right-top-part-container__circle,
+.right-down-part-container__circle {
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+  background-origin: border-box;
+  border: double 4px transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 120px;
+  position: absolute;
+  width: 120px;
+}
+
+.right-top-part-container__circle {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  right: 0;
+}
+
+.right-down-part-container__circle {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  bottom: 0;
+  right: 0;
+}
+
+.vote-container {
+  position: relative;
+  text-align: center;
+}
+
+.vote-container__score {
+  font-family: 'Quicksand';
+}
