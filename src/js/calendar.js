@@ -374,7 +374,7 @@ class Model {
         } else if ($(".input-dates").length === 2) {
           $(".input-dates")[0].setAttribute(
             "placeholder",
-            selectedObj.getDate.format("DD.MM.YYYY")
+            selectedObj.getDate.format("dd.MM.yyyy")
           );
 
           if (this.selectedArr.length > 2) {
@@ -399,7 +399,7 @@ class Model {
                 : selectedSortedArr[1].element.addClass("right");
               $(".input-dates")[idx].setAttribute(
                 "placeholder",
-                selectedSortedArr[idx].getDate.format("DD.MM.YYYY")
+                selectedSortedArr[idx].getDate.format("dd.MM.yyyy")
               );
             });
           }
