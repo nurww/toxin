@@ -13,7 +13,7 @@ module.exports = {
 	devServer: {
 		publicPath: '/',
 		port: 9000,
-		contentBase: path.join(process.cwd(), 'dist'),
+		contentBase: path.join(process.cwd(), 'docs'),
 		host: 'localhost',
 		historyApiFallback: true,
 		noInfo: false,
@@ -90,7 +90,7 @@ module.exports = {
 		new MiniCssExtractPlugin({ filename: './main.css' }),
 	],
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'docs'),
 		filename: '[name].js',
 	},
 	mode: 'development',
