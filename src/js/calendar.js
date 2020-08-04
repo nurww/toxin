@@ -99,7 +99,7 @@ $(document).ready(() => {
 
 			let daysInYearArr = this.daysInYearArr(year);
 			let monthDays = this.monthDays(daysInYearArr, year, month);
-			let pastMonthDays = this.pastMonthDays(daysInYearArr, year, month, pastMonth);
+			let pastMonthDays = this.pastMonthDays(daysInYearArr, year, pastMonth);
 			let nextMonthDays = this.nextMonthDays(daysInYearArr, pastMonthDays, monthDays, year, month);
 
 			let calendarDays = [...pastMonthDays, ...monthDays, ...nextMonthDays];
@@ -212,7 +212,7 @@ $(document).ready(() => {
 			return monthDays;
 		}
 
-		pastMonthDays(daysInYearArr, year, month, pastMonth) {
+		pastMonthDays(daysInYearArr, year, pastMonth) {
 			let pastMonthDays = [];
 
 			if (pastMonth + 2 > 12) {
