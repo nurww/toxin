@@ -172,7 +172,7 @@ $(document).ready(() => {
 						dayElements[idx].classList.add('selected', 'left');
 					} else if (el.date().isSame(`${right.getDate}`)) {
 						dayElements[idx].classList.add('selected', 'right');
-					}
+          }
 				}
 			});
 		}
@@ -420,3 +420,6 @@ $(document).ready(() => {
 	//   new View()
 	// );
 });
+
+console.log(moment(`2020-06-15`));
+console.log(moment(`2020-06-15`).toDate());
