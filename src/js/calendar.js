@@ -2,7 +2,7 @@ const moment = require('moment');
 moment.locale('ru');
 const $ = require('jquery');
 
-$(document).ready(() => {
+window.onload = function() {
 	class Model {
 		constructor(parent) {
 			this.currentYear = moment().get('year');
@@ -419,7 +419,7 @@ $(document).ready(() => {
 	//   new Model(),
 	//   new View()
 	// );
-});
+};
 
 console.log(moment(`2020-06-15`));
 console.log(moment(`2020-06-15`).toDate());
