@@ -1,0 +1,34 @@
+$purple: #BC9CFF;
+$dPurple: #8BA4F9;
+$white: #FFF;
+
+.btn {
+  background: transparent;
+  border: none;
+  color: $purple;
+  cursor: pointer;
+  font: normal 12px 'Montserrat';
+  padding: 8px 18px;
+}
+
+.gradientBorder {
+  background-clip: content-box, border-box;
+  background-image: linear-gradient($white, $white), linear-gradient($purple,$dPurple);
+  background-origin: border-box;
+  border: double 2px transparent;
+  border-radius: 22px;
+}
+
+.gradientBorder:hover {
+  background-image: linear-gradient($purple,$dPurple), linear-gradient($purple,$dPurple);
+  .btn {
+    color: $white;
+  }
+}
+
+.btn-filled {
+  background-image: linear-gradient($purple, $dPurple), linear-gradient($purple,$dPurple);
+  .btn {
+    color: $white;
+  }
+}

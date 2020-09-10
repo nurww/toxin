@@ -1,0 +1,21 @@
+.footerCreative {
+  display: flex;
+  flex-direction: column;
+  height: 367px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footerCreative-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 108px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 560px;
+}
+
+.footerCreative-content .footerCreative-content__text {
+  line-height: 24px;
+}
+

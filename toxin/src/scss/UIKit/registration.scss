@@ -1,0 +1,30 @@
+.formCard.registration {
+  height: 646px;
+}
+
+.formCard.registration .input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  padding: 0 0 0 15px;
+  font-size: 14px;
+}
+
+.formCard.registration .input {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  padding: 0;
+}
+
+.inputContainer.checkWrapper {
+  margin: 10px 0 0 0;
+}
+
+.account-check-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 30px 0 0 0;
+}
+
+.account-check-wrapper .btn {
+  padding: 14px 25px;
+}

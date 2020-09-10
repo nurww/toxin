@@ -1,0 +1,58 @@
+.range-wrapper {
+  margin: 30px 0 0 0;
+}
+
+.total-cost .rub::after {
+  background: rgba(31, 32, 65, 0.5);
+  bottom: 4px;
+}
+
+.multi-range {
+  position: relative;
+  width: 266px;
+  border-radius: 3px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  height: 6px;
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+}
+
+#left,
+#right {
+  appearance: none;
+  background: transparent;
+  background-size: 100% 2px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 2px;
+  pointer-events: none;
+}
+
+.left-thumb,
+.right-thumb {
+  appearance: none;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 16px;
+  left: 0px;
+  cursor: pointer;
+  pointer-events: all;
+  position: absolute;
+  top: -8px;
+  width: 16px;
+  z-index: 1;
+
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mid-range {
+  height: 6px;
+  top: -1px;
+  position: absolute;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}

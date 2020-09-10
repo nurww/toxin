@@ -1,0 +1,73 @@
+include ../forms/dropdown
+div(class='formCard roomReserve')
+  form(class='form')
+
+    div(class='room-card-info flex flex-X-between')
+      div(class='flex')
+        span(class='fs-12 bold') №
+        span(class='dark100 fs-24 sand mr-5') 888
+        span(class='primaryColor bold') люкс
+      div(class='flex fs-14')
+        span(class='dark50 bold') 9 990
+          span(class='rub sand mr-5') P
+        span(class='dark50') в сутки
+
+    div(class='dates-container flex flex-X-between')
+      div(class='inputContainer')
+        label(class='inputContainer__label dark100') Прибытие
+        div(class='inputWrapper')
+          input(class='input input-dates' type='text' placeholder='ДД.ММ.ГГГГ')
+          span(class='icon fs-24 dark50') keyboard_arrow_down
+      div(class='inputContainer')
+        label(class='inputContainer__label dark100') Выезд
+        div(class='inputWrapper')
+          input(class='input input-dates' type='text' placeholder='ДД.ММ.ГГГГ')
+          span(class='icon fs-24 dark50') keyboard_arrow_down
+      include ../forms/calendar
+
+    +dropdown('guests')
+
+    div(class='inputContainer')
+      div(class='flex flex-X-between')
+        div(class='column-first')
+          span(class='dark75 fs-14') 9 990
+            span(class='rub') P
+          span(class='dark75 fs-14') х 4 суток
+        div(class='column-third')
+          span(class='dark75 fs-14') 39 960
+            span(class='rub') P
+
+    div(class='inputContainer')
+      div(class='flex flex-X-between')
+        div(class='column-first')
+          span(class='dark75 fs-14') Сбор за услуги: скидка 2 179
+            span(class='rub') P
+          div(class='info-symbol')
+            span(class='info-symbol-sign fs-12 dark25 bold') i
+        div(class='column-third')
+          span(class='dark75 fs-14') 0
+            span(class='rub') P
+
+    div(class='inputContainer')
+      div(class='flex flex-X-between')
+        div(class='column-first')
+          span(class='dark75 fs-14') Сбор за дополнительные услуги
+          div(class='info-symbol')
+            span(class='info-symbol-sign fs-12 dark25 bold') i
+        div(class='column-third')
+          span(class='dark75 fs-14') 300
+            span(class='rub') P
+
+    div(class='inputContainer')
+      div(class='flex flex-X-between')
+        div
+          span(class='dark100 fs-19 sand') Итого
+        div
+          span(class='line-trough') &nbsp;
+        div
+          span(class='dark100 fs-19 sand') 38 081
+            span(class='rub sand') P
+
+    div(class='inputContainer gradientBorder btn-filled form__btn')
+      input(class='btn' type='submit' value='Перейти к оплате')
+      span(class='icon fs-24') arrow_forward

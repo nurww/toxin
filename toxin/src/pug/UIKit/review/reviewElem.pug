@@ -1,0 +1,12 @@
+mixin reviewElem(avatar, icon, user, time, description)
+  div(class='review')
+    div(class='review-image-container')
+      img(class='review-image-container__avatar' src='../../img/'+avatar+'.svg' alt='Мурат Сарафанов')
+      div(class='like-container primaryColor')
+        span(class='like-container__icon icon fs-10')= icon
+        span(class='like-container__number fs-10') 12
+    div(class='review-description-container dark75 fs-14')
+      div(class='review-user')
+        div(class='bold')= user
+        div= time
+      div(class='review-reply')= description

@@ -1,0 +1,29 @@
+.info-list {
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+}
+
+.info-list__icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.info-list__icon-container .icon {
+  background: linear-gradient(#BC9CFF, #8BA4F9) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  position: unset;
+}
+
+.info-list__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44px;
+  margin: 0 0 0 10px;
+}

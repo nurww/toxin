@@ -1,0 +1,40 @@
+mixin dropdown(type, button=false)
+
+  div(class='dropdown-container inputContainer '+type)
+    label(class='dropdown-title inputContainer__label dark100')
+    div(class='inputWrapper')
+      input(class='input inputContainer__wide dropdown-input' type='text')
+      span(class='icon fs-24 dark50') keyboard_arrow_down
+    div(class='dropdown hide fs-12')
+
+      div(class='dropdown-row flex flex-X-between')
+        span(class='dropdown-row__name bold')
+        div(class='flex dropdown-counter')
+          div(class='info-symbol sub disabled')
+            span(class='fs-12 dark25 bold') -
+          span(class='bold value') 0
+          div(class='info-symbol add')
+            span(class='fs-12 dark25 bold') +
+
+      div(class='dropdown-row flex flex-X-between')
+        span(class='dropdown-row__name bold')
+        div(class='flex dropdown-counter')
+          div(class='info-symbol sub disabled')
+            span(class='fs-12 dark25 bold') -
+          span(class='bold value') 0
+          div(class='info-symbol add')
+            span(class='fs-12 dark25 bold') +
+
+      div(class='dropdown-row flex flex-X-between')
+        span(class='dropdown-row__name bold')
+        div(class='flex dropdown-counter')
+          div(class='info-symbol sub disabled')
+            span(class='fs-12 dark25 bold') -
+          span(class='bold value') 0
+          div(class='info-symbol add')
+            span(class='fs-12 dark25 bold') +
+
+      if button
+        div(class='dropdown-row-clear flex flex-X-between')
+          span(class='dark50 bold') Очистить
+          span(class='primaryColor bold') Применить

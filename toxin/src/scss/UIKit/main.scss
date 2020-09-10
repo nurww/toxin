@@ -1,0 +1,101 @@
+/* Rules for sizing the icon. */
+.fs-11 { font-size: 11px !important; }
+.fs-10 { font-size: 10px !important; }
+.fs-12 { font-size: 12px !important; }
+.fs-13 { font-size: 13px !important; }
+.fs-14 { font-size: 14px !important; }
+.fs-15 { font-size: 15px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-17 { font-size: 17px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-19 { font-size: 19px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-21 { font-size: 21px !important; }
+.fs-22 { font-size: 22px !important; }
+.fs-23 { font-size: 23px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-48 { font-size: 48px !important; }
+
+// Font Colors
+.dark100 { color: #1F2041 !important; }
+.dark75 { color: rgba(31, 32, 65, 0.75) !important; }
+.dark50 { color: rgba(31, 32, 65, 0.5) !important; }
+.dark25 { color: rgba(31, 32, 65, 0.25) !important; }
+.primaryColor { color: #BC9CFF !important; }
+
+.bold { font-weight: bold; }
+
+.mr-5 { margin-right: 5px; }
+.mr-10 { margin-right: 10px; }
+.mr-15 { margin-right: 15px; }
+.mr-20 { margin-right: 20px; }
+.mr-25 { margin-right: 25px; }
+.mr-30 { margin-right: 30px; }
+
+.ml-5 { margin-left: 5px; }
+.ml-10 { margin-left: 10px; }
+.ml-15 { margin-left: 15px; }
+.ml-20 { margin-left: 20px; }
+.ml-25 { margin-left: 25px; }
+.ml-30 { margin-left: 30px; }
+
+.mt-5 { margin-top: 5px; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-25 { margin-top: 25px; }
+.mt-30 { margin-top: 30px; }
+
+.md-5 { margin-bottom: 5px; }
+.md-10 { margin-bottom: 10px; }
+.md-15 { margin-bottom: 15px; }
+.md-20 { margin-bottom: 20px; }
+.md-25 { margin-bottom: 25px; }
+.md-30 { margin-bottom: 30px; }
+
+.sand {
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: transparent;
+  position: relative;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  // justify-content: space-between;
+}
+
+.flex-X-between { justify-content: space-between; }
+
+.flex-Y-center { align-items: center; }
+
+.flex-X-center { justify-content: center; }
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+button, input {
+  outline: 0;
+}
+
+.user {
+  list-style: none;
+}
+
+.user::before {
+  content: '|';
+  margin: 0 28px;
+}
+
+.hide {
+  visibility: hidden;
+}

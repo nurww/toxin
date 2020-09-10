@@ -1,0 +1,86 @@
+include ../forms/roomCard
+include ../forms/dropdown
+
+div(class='container')
+  include ../header/headerUnAuth/headerUnAuth
+
+div(class='container flex flex-X-between')
+
+  div(class='aside')
+    form(class='form')
+
+      div(class='inputContainer')
+        label(class='inputContainer__label dark100') Даты пребывания в отеле
+        div(class='inputWrapper')
+          input(class='input inputContainer__wide' type='text' placeholder='19 авг - 23 авг')
+          span(class='icon fs-24 dark50') keyboard_arrow_down
+
+      div(class='inputContainer')
+        label(class='inputContainer__label dark100') Гости
+        div(class='inputWrapper')
+          input(class='input inputContainer__wide' type='text' placeholder='3 гостя, 1 младенец')
+          span(class='icon fs-24 dark50') keyboard_arrow_down
+
+      include ../forms/costRange
+
+      include ../forms/checkboxButtons
+
+      include ../forms/availability
+
+      div(class='inputContainer')
+        label(class='inputContainer__label dark100') Удобства номера
+        div(class='inputWrapper')
+          input(class='input inputContainer__wide' type='text' placeholder='2 спальни, 2 кровати...')
+          span(class='icon fs-24 dark75') keyboard_arrow_down
+
+      include ../forms/additionalConvenience
+
+
+
+
+  div(class='main')
+
+    h2(class='sand') Номера, которые мы для вас подобрали
+
+    div(class='roomCard-wrapper flex flex-X-between')
+      +roomCard('room1', '888', '9 990', '145', 5)
+      +roomCard('room2', '840', '9 900', '65', 4)
+      +roomCard('room3', '980', '8 500', '35', 3)
+
+      +roomCard('room4', '856', '7 300', '19', 5)
+      +roomCard('room5', '740', '6 000', '44', 4)
+      +roomCard('room6', '982', '5 800', '56', 3)
+
+      +roomCard('room7', '678', '5 500', '45', 5)
+      +roomCard('room8', '450', '5 300', '39', 4)
+      +roomCard('room9', '350', '5 000', '77', 3)
+
+      +roomCard('room10', '666', '5 000', '25', 5)
+      +roomCard('room11', '444', '5 000', '15', 3)
+      +roomCard('room12', '352', '5 000', '55', 3)
+
+    div(class='room-navigation flex flex-X-center')
+      div(class='bread-crumbs dark50 fs-12')
+        div(class='bread-crumbs_crumb bread-crumbs__first bold') 1
+        div(class='bread-crumbs_crumb') 2
+        div(class='bread-crumbs_crumb') 3
+        div(class='bread-crumbs_crumb') ...
+        div(class='bread-crumbs_crumb')
+        div(class='bread-crumbs_crumb bread-crumbs__next material-icons') arrow_forward
+
+      span(class='room-navigation__result dark75 fs-14 mx-auto') 1-12 из 100+ вариантов аренды
+
+
+div(class='container')
+  include ../footer/footerCopyright
+
+
+
+
+
+
+
+
+
+
+
